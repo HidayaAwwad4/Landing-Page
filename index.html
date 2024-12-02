@@ -1,0 +1,108 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hista</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header id="home" class="page__header">
+    <nav class="navbar__menu">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo-img"/>
+        <div class="logoTxt">
+          <p class="logo-text">HISTA</p>
+          <p class="logo-sub-text">Technologies</p>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+          ☰
+        </button>
+      </div>
+      <ul id="navbar__list">
+      </ul>
+    </nav>
+    <h1 class="title">We Bring<span> Your Business </span>Online!</h1>
+    <p class="subtitle">Our services provide an integrated solution to enhance your online presence & marketing return</p>
+  </header>
+
+  <!--------------------------------------------------------------------------->
+
+  <main>
+    <section id="about" data-nav="About Us" class="your-active-class">
+      <div class="landing__container">
+        <h2>About Us</h2>
+        <p>"We bring your work online! Simply, that's what we offer at Hista Technology."</p>
+        <p>Hista Technology is the first company in Palestine specializing in providing e-commerce services for individuals and businesses.The company was founded by the most skilled programmers, designers, and marketing experts, forming a distinguished team that delivers exceptional services to our clients.Through our services, we give you the opportunity to establish your presence in the digital world with your unique online identity, enabling you to explore all possible opportunities locally and globally to grow your business.</p>
+      </div>
+    </section>
+
+    <section id="projects" data-nav="Our projects">
+      <div class="landing__container">
+        <h2>Our projects</h2>
+        <div class="container">
+          <div class="post-grid">
+              <div class="post-card">
+                  <img src="./images/plogs.jpg" alt="plogs">
+                  <h2>plogs</h2>
+                  <p></p>
+                  <a href="#!">browse</a>
+              </div>
+              
+              <div class="post-card">
+                  <img src="./images/filmf.png" alt="film">
+                  <h2>filmflix</h2>
+                  <p></p>
+                  <a href="#!">browse</a>
+              </div>
+              
+              <div class="post-card">
+                  <img src="./images/ecommerce.png" alt="e-commerce">
+                  <h2>ecommerce</h2>
+                  <p></p>
+                  <a href="#!">browse</a>
+              </div>
+
+            </div>  
+        </div>
+      </div>
+    </section>
+
+    <section id="services" data-nav="Our Services">
+      <div class="landing__container">
+        <h2>Our Services</h2>
+        <p>Hista Technology offers e-commerce website solutions, including website programming and development, providing various payment methods, and analytical reports for business owners.</p>
+        <p>Key features we offer in e-commerce websites:</p>
+        <ul>
+            <li>A unique, responsive web design (supports mobile browsers, tablets, and display screens).</li>
+            <li>Displaying products and their specifications in a simple and easy-to-understand manner.</li>
+            <li>Support for various secure payment methods.</li>
+            <li>The ability to promote offers and discounts via email from the site's admin panel.</li>
+            <li>Easy access to the site through search engines.</li>
+            <li>Integration with the business owner's social media accounts.</li>
+            <li>Analytical reports for business owners.</li>
+        </ul>
+        <p>For more information about our services, feel free to contact us <a href="#">by clicking here</a>.</p>
+      </div>
+    </section>
+    <section id="contact" data-nav="Contact Us">
+      <div class="landing__container">
+        <h2>Contact Us</h2>
+        <p> info@hista.com</p>
+        <p>+972-597-693-219</p>
+        <p>Nablus - Downtown - Al-Basatin Street - Al-Basatin Commercial Complex - 10th Floor - Office No. 4</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer">
+    <p>&copy Hista</p>
+  </footer>
+</body>
+<script src="./js/app.js"></script>
+</html>
