@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
 const homeItem = document.createElement('li');
 const homeLink = document.createElement('a');
 homeLink.textContent = 'Home';
-homeLink.href = '#'; 
+homeLink.href = 'index.html'; 
 homeLink.classList.add('menu__link');
 homeItem.appendChild(homeLink);
 navbarList.prepend(homeItem); 
@@ -41,8 +41,17 @@ navbarList.prepend(homeItem);
 navbarList.addEventListener('click', (event) => {
     event.preventDefault();
     if (event.target.nodeName === 'A') {
-        const section = document.querySelector(event.target.hash);
-        section.scrollIntoView({ behavior: 'smooth' });
+        const href = event.target.getAttribute('href'); 
+        if (href.startsWith('#')) {
+            const section = document.querySelector(href);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error(`Section with id "${href}" not found.`);
+            }
+        } else {
+            window.location.href = href;
+        }
     }
 });
 
